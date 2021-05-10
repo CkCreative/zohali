@@ -54,6 +54,7 @@ params:
         style: icon
         icon: linkedin
         new_window: true
+  domain: 'https://royal-eucalyptus-8dd52.netlify.app'
 taxonomies:
   stub: stub
 disableKinds:
