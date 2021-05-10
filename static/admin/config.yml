@@ -10,7 +10,7 @@ sortableFields: ["commit_date", "title"]
 site_domain: "https://dev.zohali.africa/"
 
 collections:
-  config:
+  - config:
     type: config
     label: Site Configuration
     fields:
@@ -80,7 +80,7 @@ collections:
             label: Footer Configuration
             models:
               - footer
-  header:
+  - header:
     type: object
     label: Header Configuration
     labelField: title
@@ -110,7 +110,7 @@ collections:
           type: model
           models:
             - action
-  footer:
+  - footer:
     type: object
     label: Footer Configuration
     labelField: content
@@ -140,7 +140,7 @@ collections:
           type: model
           models:
             - action
-  advanced:
+  - advanced:
     type: page
     label: Advanced Page
     layout: advanced
@@ -174,7 +174,7 @@ collections:
         name: seo
         models:
           - stackbit_page_meta
-  blog:
+  - blog:
     type: page
     urlPath: /blog
     label: Blog
@@ -209,7 +209,7 @@ collections:
         name: seo
         models:
           - stackbit_page_meta
-  portfolio:
+  - portfolio:
     type: page
     urlPath: /portfolio
     label: Portfolio
@@ -243,7 +243,7 @@ collections:
         name: seo
         models:
           - stackbit_page_meta
-  page:
+  - page:
     type: page
     label: Page
     layout: page
@@ -272,7 +272,7 @@ collections:
         name: seo
         models:
           - stackbit_page_meta
-  post:
+  - post:
     type: page
     urlPath: '/blog/{slug}'
     label: Post
@@ -316,7 +316,7 @@ collections:
         name: seo
         models:
           - stackbit_page_meta
-  project:
+  - project:
     type: page
     urlPath: '/portfolio/{slug}'
     label: Project
@@ -358,7 +358,7 @@ collections:
         name: seo
         models:
           - stackbit_page_meta
-  section:
+  - section:
     type: object
     label: Section
     labelField: title
@@ -371,7 +371,7 @@ collections:
         name: title
         label: Title
         description: The title of the section
-  hero_section:
+  - hero_section:
     type: object
     label: Hero Section
     extends:
@@ -388,7 +388,7 @@ collections:
           type: model
           models:
             - action
-  content_section:
+  - content_section:
     type: object
     label: Content Section
     extends:
@@ -410,7 +410,7 @@ collections:
         name: content
         label: Content
         description: The text content of the section
-  cta_section:
+  - cta_section:
     type: object
     label: CTA Section
     extends:
@@ -444,7 +444,7 @@ collections:
           - light
         default: none
         required: true
-  grid_section:
+  - grid_section:
     type: object
     label: Grid Section
     extends:
@@ -470,7 +470,7 @@ collections:
           type: model
           models:
             - grid_item
-  grid_item:
+  - grid_item:
     type: object
     label: Grid item
     labelField: title
@@ -502,7 +502,7 @@ collections:
           type: model
           models:
             - action
-  portfolio_section:
+  - portfolio_section:
     type: object
     label: Portfolio Section
     extends:
@@ -533,7 +533,7 @@ collections:
         name: view_all_url
         label: All projects button URL
         default: '#'
-  posts_section:
+  - posts_section:
     type: object
     label: Posts Section
     extends:
@@ -564,7 +564,7 @@ collections:
           type: model
           models:
             - action
-  testimonials_section:
+  - testimonials_section:
     type: object
     label: Testimonials Section
     extends:
@@ -581,7 +581,7 @@ collections:
           type: model
           models:
             - testimonial
-  testimonial:
+  - testimonial:
     type: object
     label: Testimonial
     labelField: author
@@ -609,7 +609,7 @@ collections:
         label: Content
         description: The text content of the testimonial
         required: true
-  form_section:
+  - form_section:
     type: object
     label: Form Section
     extends:
@@ -649,7 +649,7 @@ collections:
         name: submit_label
         label: Submit button label
         required: true
-  form_field:
+  - form_field:
     type: object
     label: Form field
     labelField: name
@@ -690,7 +690,7 @@ collections:
         name: is_required
         label: Make the field required
         default: false
-  text_section:
+  - text_section:
     type: object
     label: Text Section
     fields:
@@ -698,7 +698,7 @@ collections:
         name: content
         label: Content
         description: The text content of the section
-  image_section:
+  - image_section:
     type: object
     label: Image Section
     fields:
@@ -723,7 +723,7 @@ collections:
           - wide
         default: regular
         required: true
-  action:
+  - action:
     type: object
     label: Action
     labelField: label
@@ -769,7 +769,7 @@ collections:
         label: No follow
         default: false
         description: Add rel="nofollow" attribute to the link
-  stackbit_page_meta:
+  - stackbit_page_meta:
     type: object
     label: Page meta data
     fields:
