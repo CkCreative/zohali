@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: assets
 sortableFields: ["commit_date", "title"]
-site_domain: "https://www.mbabaziafrica.com/"
+site_domain: "https://dev.zohali.africa/"
 
 collections:
   config:
