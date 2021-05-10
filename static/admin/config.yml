@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: CkCreative/mbabazi2
+  repo: CkCreative/zohali
   branch: main
 
 publish_mode: editorial_workflow
